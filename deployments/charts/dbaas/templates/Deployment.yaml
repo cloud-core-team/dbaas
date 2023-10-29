@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dbaas
+spec:
+  selector:
+    matchLabels:
+      app: dbaas
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dbaas
+    spec:
+      containers:
+        - name: dbaas
+          image: cloudcoreteam2023/dbaas:latest
+      ports:
+        - containerPort: 8080

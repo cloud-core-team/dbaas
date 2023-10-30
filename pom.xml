@@ -155,6 +155,11 @@
           <compilerArgs>
             <arg>-parameters</arg>
           </compilerArgs>
+          <archive>
+            <manifest>
+              <mainClass>org.cloud.core.Main</mainClass>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
       <plugin>
